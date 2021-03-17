@@ -1,4 +1,4 @@
-let naim = sprites.create(img`
+naim = sprites.create(img("""
         . . . . . . 5 . 5 . . . . . . . 
             . . . . . f 5 5 5 f f . . . . . 
             . . . . f 1 5 2 5 1 6 f . . . . 
@@ -15,11 +15,12 @@ let naim = sprites.create(img`
             . . . f 3 3 5 3 3 5 3 f f . . . 
             . . . f f f f f f f f f . . . . 
             . . . . . f f . . . . . . . . .
-    `, SpriteKind.Player)
-controller.moveSprite(naim, 100, 100)
-scene.setBackgroundImage(assets.image`
+    """),
+    SpriteKind.player)
+controller.move_sprite(naim, 100, 100)
+scene.set_background_image(assets.image("""
     idk
-`)
-tiles.setTilemap(tilemap`
+"""))
+tiles.set_tilemap(tilemap("""
     level1
-`)
+"""))
